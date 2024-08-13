@@ -1,6 +1,4 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './users/entities/user.entity';
@@ -12,14 +10,12 @@ import { User } from './users/entities/user.entity';
       host: "localhost",
       port: 3306,
       username: "root",
-      password: "",
+      password: "Dani.checho123",
       database: "api_nestjs",
       // autoLoadEntities: true, //Busca todas las entidades de la base de datos
       entities: [User],
       synchronize: true
     }),
     UsersModule],
-  controllers: [AppController],
-  providers: [AppService],
 })
 export class AppModule {}
