@@ -10,7 +10,7 @@ import { User } from './users/entities/user.entity';
       host: "localhost",
       port: 3306,
       username: "root",
-      password: "Dani.checho123",
+      password: "",
       database: "api_nestjs",
       // autoLoadEntities: true, //Busca todas las entidades de la base de datos
       entities: [User],
